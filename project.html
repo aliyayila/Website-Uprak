@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | My Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-light: #fbcce1;
+            --mint-light: #c1e9e3;
+            --glass-white: rgba(255, 255, 255, 0.45);
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --accent-pink: #ff85b3;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(45deg, #fbcce1, #e6e6fa, #c1e9e3, #fbcce1);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            margin: 0;
+            min-height: 100vh;
+            color: #444;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        header h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 4px 10px rgba(255, 133, 179, 0.5);
+            margin: 0;
+        }
+
+        /* STICKY NAV */
+        nav {
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+            margin: 0 auto 40px;
+            width: fit-content;
+            background: var(--glass-white);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+        }
+
+        nav a {
+            color: #ff85b3;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-shadow: 0 0 10px var(--accent-pink);
+        }
+
+        /* CONTAINER UTAMA */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto 60px;
+            background: var(--glass-white);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 40px;
+            border: 1px solid var(--glass-border);
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+        }
+
+        .container h2 {
+            color: white;
+            background: var(--accent-pink);
+            display: inline-block;
+            padding: 8px 30px;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            margin-bottom: 40px;
+            font-weight: 400;
+            color: #666;
+        }
+
+        /* PROJECT GRID - Glass Card Style */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            overflow: hidden;
+            border: 1px solid white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(255, 133, 179, 0.2);
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .project-card:hover img {
+            filter: brightness(1.1);
+        }
+
+        .project-card a {
+            padding: 20px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: #ff85b3;
+            text-align: center;
+            background: white;
+            margin: 15px;
+            border-radius: 15px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .project-card a:hover {
+            background: var(--accent-pink);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.85rem;
+            color: #777;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 30px 20px; }
+            header h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTOFOLIO ALIYA HASNA</h1>
+    <p style="color: #ff85b3; font-weight: 600;">Showcasing My Potential</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container" style="text-align: center;">
+
+    <h2>Collection</h2>
+    <p>Halaman ini menampilkan kumpulan proyek yang sudah aku buat. <br> Klik pada tombol di setiap kartu untuk melihat detail karyanya!</p>
+
+<div class="project-grid">
+
+<div class="project-card">
+    <img src="https://i.pinimg.com/736x/3f/56/28/3f562847e8fe530c19226a1a172fdcf4.jpg" alt="Thumbnail Video">
+    
+    <a href="https://www.youtube.com/watch?v=fqRQvW8KYx4" target="_blank">
+        Video Argumentasi
+    </a>
+</div>
+
+    <div class="project-card">
+        <img src="https://i.pinimg.com/736x/be/0f/e9/be0fe901594f17fbe3a93efd6ada3250.jpg" alt="Website Portofolio">
+        <a href="indexx.html"  target=_blank>Website Portofolio</a>
+    </div>
+
+    <div class="project-card">
+        <img src="https://i.pinimg.com/1200x/4d/34/f9/4d34f9864cedee40ff070905731e2891.jpg" alt="Game Edukasi">
+        <a href="https://scratch.mit.edu/projects/1311985572/fullscreen/" target="_blank">Game Edukasi</a>
+    </div>
+
+    <div class="project-card">
+        <img src="https://i.pinimg.com/736x/9f/b3/5b/9fb35ba23200294f35a7b1a1ab6f6e72.jpg" alt="Vlog Tugas Broadcasting">
+        <a href="https://www.youtube.com/watch?v=-GPfHWPvsLA" target=_blank>Vlog Tugas Broadcasting</a>
+    </div>
+
+</div>
+
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Aliya Hasna @2026</p>
+</footer>
+
+</body>
+</html>

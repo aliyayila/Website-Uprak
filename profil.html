@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Profil Aliya Hasna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-light: #fbcce1;
+            --mint-light: #c1e9e3;
+            --glass-white: rgba(255, 255, 255, 0.45);
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --accent-pink: #ff85b3;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(45deg, #fbcce1, #e6e6fa, #c1e9e3, #fbcce1);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            margin: 0;
+            min-height: 100vh;
+            color: #444;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 30px 20px;
+        }
+
+        header h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 4px 10px rgba(255, 133, 179, 0.5);
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        /* STICKY NAV - Sama dengan Beranda */
+        nav {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+            margin: 0 auto 30px;
+            width: fit-content;
+            background: var(--glass-white);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+        }
+
+        nav a {
+            color: #ff85b3;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-shadow: 0 0 10px var(--accent-pink);
+        }
+
+        /* CONTAINER GLASS */
+        .container {
+            width: 85%;
+            max-width: 800px; /* Lebih ramping untuk profil */
+            margin: 20px auto 50px;
+            background: var(--glass-white);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 40px;
+            border: 1px solid var(--glass-border);
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        /* FOTO PROFIL AESTHETIC */
+        .profile-photo {
+            margin-bottom: 30px;
+        }
+
+        .profile-photo img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid white;
+            box-shadow: 0 10px 25px rgba(255, 133, 179, 0.3);
+            transition: 0.4s;
+        }
+
+        .profile-photo img:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+
+        /* TEXT STYLING */
+        .content-text h2 {
+            color: white;
+            background: var(--accent-pink);
+            display: inline-block;
+            padding: 5px 25px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+
+        .content-text p {
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 25px;
+            text-align: center;
+            max-width: 600px;
+            margin: 15px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.85rem;
+            color: #777;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        @media (max-width: 768px) {
+            .container { width: 90%; padding: 25px; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTOFOLIO ALIYA HASNA</h1>
+    <p style="color: #ff85b3; font-weight: 600;">The Real Version of Me</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <div class="profile-photo">
+        <img src="aliyaa.jpg" alt="Foto Profil Aliya">
+        <p style="margin-top: 15px; font-size: 0.9rem; color: #ff85b3;"><b>Aliya Hasna</b></p>
+    </div>
+
+    <div class="content-text">
+
+        <h2>Profil Singkat</h2>
+        <p>Hai semua! Perkenalkan, namaku Aliya Hasna Althafunnisa, biasanya aku dipanggil Aliya. Saat ini aku berada di kelas 9 An-Nasr. Aku lahir di Jakarta, pada tanggal 26 Oktober 2010, dan sekarang aku berusia 15 tahun. Semoga lewat perkenalan singkat ini, kamu bisa lebih mengenal aku dengan baik.</p>
+
+        <h2>Tentang Saya</h2>
+        <p>Aku merupakan pribadi yang suka mengetahui hal-hal baru terutama di bidang kesehatan. Aku sangat menikmati waktu luangku untuk mendengarkan musik, menonton film, dan bermain game.</p>
+
+        <h2>Minat dan Bakat</h2>
+        <p>AKu sangat tertarik pada bidang kesehatan. Di waktu luang, aku suka mendengarkan musik dan bermain game. Aku memiliki bakat untuk mengahafal sesuatu dengan cepat.</p>
+
+        <h2>Cita-cita dan Harapan</h2>
+        <p>Cita-citaku adalah menjadi Dokter Anak atau Diplomat. Harapanku semoga aku bisa terus berkembang menjadi lebih baik dari sekarang.</p>
+
+        <h2>Kesan dan Pesan Kelas IX</h2>
+        <p>Selama aku belajar di SMPIT Al Haraki, terutama di kelas IX, memberikan banyak pelajaran kepadaku, terutama pada cara mengatur waktu dengan baik supaya semua kegiatan di kelas IX dapat diselesaikan dengan baik.</p>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Aliya Hasna @2026</p>
+</footer>
+
+</body>
+</html>
